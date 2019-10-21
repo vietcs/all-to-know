@@ -54,6 +54,8 @@ cd vietcs-web
 git submodule update --init --recursive
 ```
 
+**Bước 3:** Tải công cụ viết markdown: vscode,... Nhưng khuyến khích nên dùng typora, download [tại đây](https://www.typora.io/) vì đơn giản cho người mới, giao diện đẹp người dùng lâu cũng thấy thoải mái.
+
 ## Đăng bài
 
 **Bước 3:** Tạo file markdown và chuẩn bị viết bài!
