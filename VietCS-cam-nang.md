@@ -76,7 +76,7 @@ git checkout -b viet-bai-moi
 
 ## Đăng bài
 
-**Bước 4:** Tạo file markdown và chuẩn bị viết bài!
+**Bước 5:** Tạo file markdown và chuẩn bị viết bài!
 
  ```bash
 hugo new <chủ-đề>/<tên-file>.md
@@ -95,7 +95,7 @@ Ví dụ: Bạn viết 1 bài về gioi-thieu-cv về chủ đề Computer Visio
 hugo new cv/gioi-thieu-cv.md
 ```
 
-**Bước 5:** Mỗi 1 bài viết có 1 header, điều chỉnh header của file bài viết sao cho phù hợp. Header tiêu chuẩn sẽ trông như thế 
+**Bước 6:** Mỗi 1 bài viết có 1 header, điều chỉnh header của file bài viết sao cho phù hợp. Header tiêu chuẩn sẽ trông như thế 
 
 ```md
 ---
@@ -124,13 +124,13 @@ Trong đó:
 
 `slug` link dẫn tới bài viết, có dạng `vietcs/posts/../<slug>`
 
-**Bước 5: **Review xem trước trang web tại local, xem bài của bạn hiện lên trang như thế nào
+**Bước 7: **Review xem trước trang web tại local, xem bài của bạn hiện lên trang như thế nào
 
 ```bash
 hugo serve
 ```
 
-**Bước 6:** Commit bài lên github
+**Bước 8:** Commit bài lên github
 
 ```bash
 git add <đường dẫn tới file markdown mà bạn viết>
@@ -138,7 +138,7 @@ git commit -m "Dang bai moi: <ten post>"
 git push origin viet-bai-moi
 ```
 
-**Bước 7:** Lên nhìn lại bản repo fork trên github của bạn
+**Bước 9:** Lên nhìn lại bản repo fork trên github của bạn
 
 Github sẽ tự hiểu là bạn vừa thay đổi trên **branch** viet-bai-moi này, và gợi ý bạn làm 1 **pull request** để xin mình **merge** vào **master branch** của **web repo**
 
@@ -148,7 +148,7 @@ Bạn đăng 1 cái **pull request** với tựa đề và nội dung cụ thể
 
 ![fork](images/pull-request-2.png)
 
-**Bước 8:** Báo cho **Web Owner** để duyệt bài và **commit** vào **master branch** của web repo
+**Bước 10:** Báo cho **Web Owner** để duyệt bài và **commit** vào **master branch** của web repo
 
 # Hướng dẫn sử dụng markdown
 
