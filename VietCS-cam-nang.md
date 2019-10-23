@@ -44,21 +44,39 @@ sudo dpkg -i "$TEMP_DEB"
 rm -f "$TEMP_DEB"
 ```
 
+**Bước 2:** Fork [repo](https://github.com/patrickphatnguyen/vietcs-blog) của VietCS
 
+![fork](images/fork.png)
 
-**Bước 2:** clone websource của VietCS về
+Giờ bạn đã có 1 bản fork trên github của bạn!
+
+![forked](images/forked.png)
+
+**Bước 2:** Clone bản fork này về máy
+
+Copy quả link ở đây:
+
+![fork](images/git-link.png)
+
+Clone về máy
 
 ```bash 
-git clone https://github.com/patrickphatnguyen/vietcs-blog.git
+git clone <thay bằng link của bạn>
 cd vietcs-web
 git submodule update --init --recursive
 ```
 
 **Bước 3:** Tải công cụ viết markdown: vscode,... Nhưng khuyến khích nên dùng typora, download [tại đây](https://www.typora.io/) vì đơn giản cho người mới, giao diện đẹp người dùng lâu cũng thấy thoải mái.
 
+**Bước 4:** Tạo một **branch** mới để bạn có thể thay đổi trên branch này
+
+```bash 
+git checkout -b viet-bai-moi
+```
+
 ## Đăng bài
 
-**Bước 3:** Tạo file markdown và chuẩn bị viết bài!
+**Bước 4:** Tạo file markdown và chuẩn bị viết bài!
 
  ```bash
 hugo new <chủ-đề>/<tên-file>.md
@@ -77,7 +95,7 @@ Ví dụ: Bạn viết 1 bài về gioi-thieu-cv về chủ đề Computer Visio
 hugo new cv/gioi-thieu-cv.md
 ```
 
-**Bước 4:** Mỗi 1 bài viết có 1 header, điều chỉnh header của file bài viết sao cho phù hợp. Header tiêu chuẩn sẽ trông như thế 
+**Bước 5:** Mỗi 1 bài viết có 1 header, điều chỉnh header của file bài viết sao cho phù hợp. Header tiêu chuẩn sẽ trông như thế 
 
 ```md
 ---
@@ -115,12 +133,22 @@ hugo serve
 **Bước 6:** Commit bài lên github
 
 ```bash
-git add .
+git add <đường dẫn tới file markdown mà bạn viết>
 git commit -m "Dang bai moi: <ten post>"
-git push origin master
+git push origin viet-bai-moi
 ```
 
-**Bước 6:** Báo cho **Web Owner** để duyệt bài và reload lại web
+**Bước 7:** Lên nhìn lại bản repo fork trên github của bạn
+
+Github sẽ tự hiểu là bạn vừa thay đổi trên **branch** viet-bai-moi này, và gợi ý bạn làm 1 **pull request** để xin mình **merge** vào **master branch** của **web repo**
+
+![fork](images/pull-request-1.png)
+
+Bạn đăng 1 cái **pull request** với tựa đề và nội dung cụ thể, như trong hình chẳng hạn. Rồi mình và các bạn khác sẽ theo dõi và sẽ merge những thay đổi trên vào **master branch** của **web repo**
+
+![fork](images/pull-request-2.png)
+
+**Bước 8:** Báo cho **Web Owner** để duyệt bài và **commit** vào **master branch** của web repo
 
 # Hướng dẫn sử dụng markdown
 
