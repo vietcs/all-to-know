@@ -19,13 +19,13 @@
 ## Quy định về chất lượng
 
 - Số người review: ít nhất 3 người review và 50% trở lên đồng ý.
-
 - Một số thứ nên có:
   - Nên viết theo kiểu quy nạp (top-down) sẽ đỡ buồn ngủ hơn
   - Hiệu ứng "Ồ quao": Bài viết nên có yếu tố lạ, bất ngờ
   - Nên đặt các câu hỏi thảo luận: Cái gì, tại sao, khi nào?
-
-- Triết lý khi viết bài: Viết để học, viết để thảo luận, viết để khám phá những "miền đất" mới :))
+- Triết lý khi viết bài: 
+  - Viết để học, viết để thảo luận, viết để khám phá những "miền đất" mới :))
+  - Không viết vì tiền
 
 # Hướng dẫn đăng bài
 
@@ -44,7 +44,9 @@ sudo dpkg -i "$TEMP_DEB"
 rm -f "$TEMP_DEB"
 ```
 
-**Bước 2:** Fork [repo](https://github.com/patrickphatnguyen/vietcs-blog) của VietCS
+> **Lưu ý:** Từ bước này trở đi nếu chưa hiểu thì có thể coi [clip sau](https://www.youtube.com/watch?v=rgbCcBNZcdQ&t)
+
+Bước 2:** Fork [repo](https://github.com/patrickphatnguyen/vietcs-blog) của VietCS
 
 ![fork](images/fork.png)
 
@@ -62,7 +64,7 @@ Clone về máy
 
 ```bash 
 git clone <thay bằng link của bạn>
-cd vietcs-web
+cd vietcs-blog
 git submodule update --init --recursive
 ```
 
