@@ -46,7 +46,7 @@ rm -f "$TEMP_DEB"
 
 > **Lưu ý:** Từ bước này trở đi nếu chưa hiểu thì có thể coi [clip sau](https://www.youtube.com/watch?v=rgbCcBNZcdQ&t)
 
-Bước 2:** Fork [repo](https://github.com/patrickphatnguyen/vietcs-blog) của VietCS
+Bước 2:** Fork [repo](https://github.com/vietcs/vietcs-blog) của VietCS
 
 ![fork](images/fork.png)
 
@@ -152,6 +152,22 @@ Bạn đăng 1 cái **pull request** với tựa đề và nội dung cụ thể
 
 **Bước 10:** Báo cho **Web Owner** để duyệt bài và **commit** vào **master branch** của web repo
 
+## Đồng bộ repo
+
+Bởi vì bạn dùng bản "fork" của repo của vietcs-blog, sẽ tới một lúc bản của bạn sẽ bị outdated trong khi vietcs-blog đã cập nhật bản mới. Để đồng bộ với repo của vietcs, bạn phải:
+
+- Thêm remote upstream tới github của repo gốc
+
+```bash
+git remote add upstream https://github.com/vietcs/vietcs-blog
+```
+
+- Khi cần đồng bộ,   bạn sẽ kéo repo gốc (upstream) xuống
+
+```bash 
+git pull upstream master
+```
+
 # Hướng dẫn sử dụng markdown
 
 Đọc bài này: https://viblo.asia/helps/cach-su-dung-markdown-bxjvZYnwkJZ
@@ -208,6 +224,14 @@ Lưu ý: Ảnh nên có width từ 300 -> 400 và không nên dài hơn chữ qu
 
 <center><img src="https://miro.medium.com/max/1200/1*s9raSe9mLeSSuxE3API-ZA.gif" width=400></center>
 <center> <b>Ảnh 1</b> Minh họa Object Detection - <i>towardsdatascience </i></center>
+## Gõ công thức toán trong Markdown
+
+Để gõ được công thức toán trong markdown, bạn phải dùng một extension của Markdown là Latex. Đọc tại [đây](https://texmath.com/soan-thao-toan-hoc-trong-latex/)
+
+Lưu ý rằng, khi viết latex cùng với markdown, latex sẽ được giới hạn trong phạm vi 2 dấu đồng đôla "$".
+
+Ví dụ: $a+b=c$
+
 # Các thông tin liên hệ
 
 - Thầy Nguyễn Vinh Tiệp: Mentor cho VietCS, hỏi mảng nào thầy cũng chơi
