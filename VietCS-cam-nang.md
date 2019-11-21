@@ -124,7 +124,8 @@ Trong đó:
 
 `tags` đính kèm của bài viết
 
-`slug` link dẫn tới bài viết, có dạng `vietcs/posts/../<slug>`
+`slug` link dẫn tới bài viết, có dạng `vietcs/posts/../<slug>` 
+Ví dụ về slug: computer-vision-la-gi (nên để giống tên file .md)
 
 **Bước 7: **Review xem trước trang web tại local, xem bài của bạn hiện lên trang như thế nào
 
