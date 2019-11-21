@@ -181,6 +181,8 @@ Bạn chỉ cần nhớ một số thứ sau đây
 "1." hay "2." hay "3." là header bậc 1 dùng #
 "1.1" hay "1.2" hay "2.1" là header bậc 2 dùng ##
 "1.1.1" hay "1.1.2" hay "2.1.2" là header bậc 3 dùng ###
+
+## Đầu đề (header)
 ```md
 # 1
 ## 2.1
